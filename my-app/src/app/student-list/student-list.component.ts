@@ -10,7 +10,7 @@ import { DataService } from "../service/data.service";
 })
 export class StudentListComponent implements OnInit {
   candidates:any;
-  constructor(private dataService:DataService) { }
+  constructor(private dataService : DataService) { }
 
   ngOnInit() {   
 

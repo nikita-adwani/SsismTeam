@@ -7,6 +7,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class DataService {
+  // [x: string]: any;
  
   constructor(private http: HttpClient) {}
   dataUrl = environment.dataURL;  

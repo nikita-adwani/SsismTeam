@@ -9,16 +9,16 @@ import { DetailsComponent } from './details/details.component';
 import { HttpClientModule } from '@angular/common/http';
 import {StudentListComponent} from './student-list/student-list.component';
 import { RouterModule } from '@angular/router';
-import { FrontpageComponent } from './frontpage/frontpage.component';
+// import { FrontpageComponent } from './frontpage/frontpage.component';
 import { DetailComponent } from './detail/detail.component';
 import { StartingpageComponent } from './startingpage/startingpage.component';
 import { routes } from './app-routing.module';
 
 
 
- let myRoutes = [
-   { path: 'student/:id', component:  StudentListComponent}
-]
+// let myRoutes = [
+//   { path: 'student/:candidateId', component:  DetailComponent}
+// ]
 @NgModule({
   declarations: [
     AppComponent,
