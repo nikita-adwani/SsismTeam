@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { DetailComponent } from './detail/detail.component';
+import { StartingpageComponent } from './startingpage/startingpage.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DetailComponent } from './detail/detail.component';
     HeaderComponent,
     FooterComponent,
     FrontpageComponent,
-    DetailComponent
+    DetailComponent,
+    StartingpageComponent
   ],
   imports: [
     BrowserModule,
