@@ -7,11 +7,11 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class DataService {
-
+ 
   constructor(private http: HttpClient) {}
   dataUrl = environment.dataURL;  
 
-    getCandidateData(){
+  getCandidateDetails(){
       // return candidateData;
 
       return this.http.get(this.dataUrl);
