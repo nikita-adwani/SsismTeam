@@ -11,11 +11,25 @@
     <div class="card-body bg-light">
    <h1 class="text-center">Student List</h1>
    <div class="bottom-right">
+
+
+      <div *ngIf=candidates>
+          <div *ngFor="let candidate of candidates">
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+
+                      <a  [routerLink]="['/student', candidate.id]">
+                          {{candidate.candidateName}}
+                          </a>
+
+                  </li>
+              </ul>
+          </div>
+      </div>
     <button type="button" class="btn btn-lg btn-outline-info">View Profile</button>
   
    </div>
   
-    </div>
   </div>
   </div>
   
