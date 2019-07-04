@@ -11,6 +11,7 @@ import { DetailsComponent } from './details/details.component';
 @NgModule({
   declarations: [
     AppComponent,
+    StudentListComponent,
     DetailsComponent,
     HeaderComponent,
     FooterComponent
