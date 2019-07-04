@@ -11,17 +11,10 @@ import { DetailsComponent } from './details/details.component';
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     DetailsComponent,
     HeaderComponent,
     FooterComponent
 
-=======
-    StudentListComponent,
-    DetailsComponent,
-    HeaderComponent,
-    FooterComponent
->>>>>>> 812dfda4a2883b413789eab132e7a5032742d696
   ],
   imports: [
     BrowserModule,
