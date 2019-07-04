@@ -8,6 +8,8 @@ import { DetailsComponent } from './details/details.component';
 import { HttpClientModule } from '@angular/common/http';
 import {StudentListComponent} from './student-list/student-list.component';
 import { RouterModule } from '@angular/router';
+import { FrontpageComponent } from './frontpage/frontpage.component';
+import { DetailComponent } from './detail/detail.component';
 
 let myRoutes = [
   { path: 'student/:id', component:  StudentListComponent}
@@ -15,10 +17,13 @@ let myRoutes = [
 @NgModule({
   declarations: [
     AppComponent,
+
     DetailsComponent,
     HeaderComponent,
     FooterComponent,
-    StudentListComponent
+    StudentListComponent,
+    DetailComponent
+
   ],
   imports: [
     BrowserModule,

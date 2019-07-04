@@ -4,11 +4,15 @@
     // transition: 5s;
     //  transition-duration: 5s;
     //  transition: 5s;
-    transition-duration: 5s;
+    // transition-duration: 5s;
     width: 20%;
     margin-left: 790px;
     margin-right: 500px;
     box-shadow: 0px 0px 0px 3px rgb(200, 200, 202);
+}
+
+.glyphicon .glyphicon-volume-up {
+    color: red;
 }
 
 .card .container {
@@ -35,9 +39,9 @@ p {
 }
 
 .card:hover {
-    box-shadow: 8px 20px 8px 8px rgba(70, 70, 70, 0.2);
+    box-shadow: 8px 20px 8px 8px rgba(153, 153, 153, 0.2);
 }
 
 .container:hover {
-    box-shadow: 0 8px 16px 0 rgba(63, 62, 62, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(153, 153, 153, 0.2);
 }
