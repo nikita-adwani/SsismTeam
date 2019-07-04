@@ -10,18 +10,18 @@ import {Router , ActivatedRoute } from "@angular/router";
 export class DetailComponent implements OnInit {
   
   
- public candidate : any;
+ public candidates : any;
  public candidateCandidateDetails:any;
  public candidateId:null;
  public selectedCandidate;
-  candidates: any;
-  dataService: any;
+  // candidates: any;
+  // dataService: any;
   constructor(
-    private dataservice: DataService,
+    private dataService: DataService,
     private router :Router,
     private route:ActivatedRoute
   ) {
- let params = this.route.snapshot.params;
+ let params = this.route.snapshot.params; //btane ke liyue data aa rha h ki nhi
  if(params){
    this.candidateId = params.candidateId;
  }
@@ -49,6 +49,6 @@ export class DetailComponent implements OnInit {
           this.selectedCandidate = c;
         }
       }) ;
-    });
-  }
+     });
+}
 }

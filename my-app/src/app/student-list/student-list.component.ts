@@ -10,14 +10,14 @@ import { DataService } from "../service/data.service";
 })
 export class StudentListComponent implements OnInit {
   candidates:any;
-  constructor(private dataService:DataService) { }
+  constructor(private dataService : DataService) { }
 
   ngOnInit() {   
 
     this.getData();
   }
   getData() {
-    this.dataService.getCandidateData().subscribe(data => {
+    this.dataService.getCandidateDetails().subscribe(data => {
       this.candidates = data;
       console.log(data)
     })
