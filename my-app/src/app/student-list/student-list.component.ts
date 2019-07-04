@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from "../service/data.service";
+
 
 @Component({
   selector: 'app-student-list',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-list.component.scss']
 })
 export class StudentListComponent implements OnInit {
+  candidates:any;
+  constructor(private dataService:DataService) { }
 
-  constructor() { }
+  ngOnInit() {   
 
-  ngOnInit() {
+    this.getData();
+  }
+  getData() {
+    this.dataService.getCandidateData().subscribe(data => {
+      this.candidates = data;
+      console.log(data)
+    })
+
   }
 
+  
 }
