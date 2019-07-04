@@ -1,16 +1,8 @@
-.card:hover {
-    box-shadow: 8px 20px 8px 8px rgba(70, 70, 70, 0.2);
-}
-
-.container:hover {
-    box-shadow: 0 8px 16px 0 rgba(63, 62, 62, 0.2);
-}
-
 .card {
     border: 1px solid black;
     text-align: center;
-    //  transition: 5s;
-    // transition-duration: 5s;
+    transition: 5s;
+    transition-duration: 5s;
     width: 20%;
     margin-left: 790px;
     margin-right: 500px;
@@ -38,4 +30,12 @@ h4 {
 
 p {
     color: white;
+}
+
+.card:hover {
+    box-shadow: 8px 20px 8px 8px rgba(70, 70, 70, 0.2);
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px 0 rgba(63, 62, 62, 0.2);
 }
