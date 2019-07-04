@@ -16,8 +16,8 @@ import { routes } from './app-routing.module';
 
 
 
-let myRoutes = [
-  { path: 'student/:id', component:  StudentListComponent}
+ let myRoutes = [
+   { path: 'student/:id', component:  StudentListComponent}
 ]
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ let myRoutes = [
     BrowserModule,
     NgbModule,
     HttpClientModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,7 +17,7 @@ export class StudentListComponent implements OnInit {
     this.getData();
   }
   getData() {
-    this.dataService.getCandidateData().subscribe(data => {
+    this.dataService.getCandidateDetails().subscribe(data => {
       this.candidates = data;
       console.log(data)
     })
