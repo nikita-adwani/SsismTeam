@@ -3,9 +3,7 @@ import { candidateData } from '../dataCandidate';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class DataService {
   // [x: string]: any;
  

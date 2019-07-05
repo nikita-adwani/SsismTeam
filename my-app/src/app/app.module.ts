@@ -1,44 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
- import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//  import { AppRoutingModule, routes} from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { DetailsComponent } from './details/details.component';
-import { HttpClientModule } from '@angular/common/http';
-import {StudentListComponent} from './student-list/student-list.component';
-import { RouterModule } from '@angular/router';
-// import { FrontpageComponent } from './frontpage/frontpage.component';
-import { DetailComponent } from './detail/detail.component';
-import { StartingpageComponent } from './startingpage/startingpage.component';
-import { routes } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { StartingpageComponent } from './components/startingpage/startingpage.component';
+import { StudentListComponent } from './components/student-list/student-list.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { DetailsComponent } from './components/details/details.component';
 
-// let myRoutes = [
-//   { path: 'student/:candidateId', component:  DetailComponent}
-// ]
+import { routes } from './app-routing.module';
+import { DataService } from './services/data.service';
 @NgModule({
   declarations: [
     AppComponent,
-
-    DetailsComponent,
-    StartingpageComponent,
     HeaderComponent,
     FooterComponent,
+    StartingpageComponent,
     StudentListComponent,
-    DetailComponent
-
+    DetailComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

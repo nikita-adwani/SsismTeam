@@ -1,10 +1,10 @@
 
 import { Routes, RouterModule } from '@angular/router';
-import { StudentListComponent } from './student-list/student-list.component';
-import { DetailComponent } from './detail/detail.component';
-import { DetailsComponent } from './details/details.component';
+import { StudentListComponent } from './components/student-list/student-list.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { DetailsComponent } from './components/details/details.component';
 import { NgModule} from '@angular/core';
-import { StartingpageComponent } from './startingpage/startingpage.component';
+import { StartingpageComponent } from './components/startingpage/startingpage.component';
 
 export const routes: Routes = [
 
