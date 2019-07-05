@@ -56,15 +56,17 @@
                 </div>
                 <div class="team-content">
                     <span class="name"></span>{{selectedCandidate?.candidateName}}
+                    <br>
 
                     <span class="mr-1">Email:</span> {{selectedCandidate?.candidateDetails.emailId}}
+                    <br>
 
                     <span class="mr-1">Class:</span> {{selectedCandidate?.candidateDetails.class}}
+                    <br>
 
                     <span class="mr-1">Mobile.no:</span> {{selectedCandidate?.candidateDetails.mobileNo}}
 
-                    <span class="mr-1">Email:</span> {{selectedCandidate?.candidateDetails.emailId}}
-                    <br> -->
+                    <br>
                     <button type="button" class="btn btn-outline-info pl-5 pr-5 m-3" [routerLink]="['/details',selectedCandidate?.id]">More Details</button>
 
 
