@@ -2,7 +2,7 @@ var http = require('http');
 const fs = require('fs');
 
 let candidateData = [];
-fs.readFile('../candidateData.json', (err, data) => {
+fs.readFile('./candidateData.json', (err, data) => {
   if (err) {
     console.error(err)
     return
