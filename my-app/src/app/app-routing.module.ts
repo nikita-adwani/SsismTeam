@@ -9,9 +9,9 @@ import { StartingpageComponent } from './startingpage/startingpage.component';
 export const routes: Routes = [
 
   { path: '', component: StartingpageComponent },
+  {path: "student-list", component:StudentListComponent},
   { path: 'detail/:candidateId', component: DetailComponent },
   { path: 'detail', component: DetailComponent },
-  {path: "student-list", component:StudentListComponent},
   { path: 'details', component: DetailsComponent }
 ]
 
