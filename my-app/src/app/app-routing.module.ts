@@ -13,8 +13,10 @@ export const routes: Routes = [
   { path: '', component: StudentListComponent },
   { path: 'detail/:candidateId', component: DetailComponent },
   {path: "student-list", component:StudentListComponent},
-  { path: 'details', component: DetailsComponent }
-]
+  { path: 'detail/:candidateDetails', component: DetailComponent },
+
+   { path: 'details', component: DetailsComponent },
+   ]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
