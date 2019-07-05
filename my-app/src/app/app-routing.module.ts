@@ -12,7 +12,8 @@ export const routes: Routes = [
   {path: "student-list", component:StudentListComponent},
   { path: 'detail/:candidateId', component: DetailComponent },
   { path: 'detail', component: DetailComponent },
-  { path: 'details', component: DetailsComponent }
+  { path: 'details', component: DetailsComponent },
+  { path: 'details/:candidateId', component: DetailsComponent }
 ]
 
 @NgModule({

@@ -63,12 +63,9 @@
 
                     <span class="mr-1">Mobile.no:</span> {{selectedCandidate?.candidateDetails.mobileNo}}
 
-                    <button type="button" class="btn btn-outline-info pl-5 pr-5 m-3" [routerLink]="['/details']">More Details</button>
+                    <span class="mr-1">Email:</span> {{selectedCandidate?.candidateDetails.emailId}}
+                    <br> -->
+                    <button type="button" class="btn btn-outline-info pl-5 pr-5 m-3" [routerLink]="['/details',selectedCandidate?.id]">More Details</button>
 
 
                 </div>
-
-
-            </div>
-        </div>
-    </div>
