@@ -18,6 +18,7 @@ import { DataService } from "./services/data.service";
 import { HomeComponent } from "./pages/home/home.component";
 import { StudentsComponent } from "./pages/students/students.component";
 import { KeysPipe } from "./pipe/keys.pipe";
+import { StudentDetailsComponent } from './pages/student-details/student-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { KeysPipe } from "./pipe/keys.pipe";
     DetailsComponent,
     HomeComponent,
     StudentsComponent,
-    KeysPipe
+    KeysPipe,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,
