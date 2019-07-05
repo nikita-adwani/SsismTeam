@@ -45,10 +45,9 @@ export class DetailComponent implements OnInit {
     this.dataService.getCandidateDetails().subscribe(data => {
       this.candidates = data;
       console.log(data);
+      const params = this.route.snapshot.params.candidateId;
 
-      if (this.route.snapshot.params.candidateId === 'all' ) {
-        console.log('im here');
-
+      if (params === undefined || params === 'all') {
         this.candidateList = this.candidates.filter((item) => item.id !== undefined);
       } else {
 
