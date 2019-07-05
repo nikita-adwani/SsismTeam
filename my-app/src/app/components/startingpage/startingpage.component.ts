@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-startingpage',
-  templateUrl: './startingpage.component.html',
-  styleUrls: ['./startingpage.component.scss']
+  selector: "app-startingpage",
+  templateUrl: "./startingpage.component.html",
+  styleUrls: ["./startingpage.component.scss"]
 })
 export class StartingpageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  @Input("nextpage") nextpage: string;
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
