@@ -21,7 +21,7 @@ export class StudentListComponent implements OnInit {
       this.candidates = data;
       console.log(data)
     })
-
+    
   }
 
   

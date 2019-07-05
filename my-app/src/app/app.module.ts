@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
 import { StartingpageComponent } from './startingpage/startingpage.component';
 import { routes } from './app-routing.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 // let myRoutes = [
@@ -24,6 +24,7 @@ import { routes } from './app-routing.module';
     AppComponent,
 
     DetailsComponent,
+    StartingpageComponent,
     HeaderComponent,
     FooterComponent,
     StudentListComponent,
@@ -34,7 +35,8 @@ import { routes } from './app-routing.module';
     BrowserModule,
     NgbModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
