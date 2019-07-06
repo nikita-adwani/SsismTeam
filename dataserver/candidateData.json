@@ -1,94 +1,319 @@
-[
-  {
-    "id": 1,
-    "name": "Laveena Pahuja",
-    "details": {
-    	"branch": "BCA",
-    	"city": "Harda",
-    	"collegeName": "SSISM",
-    	"emailId": "laveena2806@gmail.com",
-    	"gender": "female",
-    	"hobbies": "Reading Books",
-        "imgPath": "/assets/laveena.jpg",
-        "mobileNo": "9131668514", 
-        "year" : "1 year"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Nikita Adwani",
-    "details": {
-    	"branch": "BCA",
-    	"city": "Harda",
-    	"collegeName": "SSISM,Sandalpur",
-    	"emailId": "niknikkynikitagmail.com",
-    	"gender": "female",
-    	"hobbies": "Sketching",
-        "imgPath": "assets/nikky.jpg",
-        "mobileNo": "6266860030",
-        "year" : "1 year" 
-    }
-  },
-  {
-    "id": 3,
-    "name": "Piyush Sen",
-    "details": {
-    	"branch": "BCA",
-    	"city": "Harda",
-    	"collegeName": "SSISM,Sandalpur",
-    	"emailId": "piyushsen044@gmail.com",
-    	"gender": "male",
-    	"hobbies": "Cricket",
-    	"imgPath": "assets/piyush.jpg",
-    	"mobileNo": "6264200216",
-        "year" : "1 year"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Prashant Malviya",
-    "details": {
-    	"branch": "BCA",
-    	"city": "Ha0rda",
-    	"collegeName": "SSISM,Sandalpur",
-    	"emailId": "prashantmalviya189@gmail.com",
-    	"gender": "male",
-    	"hobbies": "Dancing",
-        "imgPath": "assets/prashant.jpg",
-        "mobileNo": "7440835353",
-        "year" : "1 year"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Sonakshi Yadav",
-    "details": {
-    	"branch": "BSC(CS)",
-    	"city": "Dewas",
-    	"collegeName": "SSISM,Sandalpur",
-    	"emailId": "ysonakshi57@gmail.com",
-    	"gender": "female",
-    	"hobbies": "Playing Volleyball",
-        "imgPath": "assets/sonakshi1.jpg",
-        "mobileNo": "7692089170",
-        "year" : "2 year"
-    }
-  },
-  {
-    "id": 6,
-    "name": "Suhasee Talreja",
-    "details": {
-    	"branch": "BCA",
-    	"city": "Harda",
-    	"collegeName": "SSISM,Sandalpur",
-    	"emailId": "suhaseetalreja14@gmail.com",
-    	"gender": "Female",
-    	"hobbies": "Dancing",
-        "imgPath": "assets/suhasee.jpg",
-        "mobileNo": "8821061133",
-        "year" : "1 year"
-    }
-  }
- 
-]
+[{
+        "id": 1,
+        "name": "Laveena Pahuja",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM",
+            "emailId": "laveena2806@gmail.com",
+            "gender": "female",
+            "hobbies": "Reading Books",
+            "imgPath": "/assets/images/laveena.jpg",
+            "mobileNo": "9131668514",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Nikita Adwani",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "niknikkynikitagmail.com",
+            "gender": "female",
+            "hobbies": "Sketching",
+            "imgPath": "assets/images/nikky.jpg",
+            "mobileNo": "6266860030",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Piyush Sen",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "piyushsen044@gmail.com",
+            "gender": "male",
+            "hobbies": "Cricket",
+            "imgPath": "assets/images/piyush.jpg",
+            "mobileNo": "6264200216",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Prashant Malviya",
+        "details": {
+            "branch": "BCA",
+            "city": "Ha0rda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "prashantmalviya189@gmail.com",
+            "gender": "male",
+            "hobbies": "Dancing",
+            "imgPath": "assets/images/prashant.jpg",
+            "mobileNo": "7440835353",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Sonakshi Yadav",
+        "details": {
+            "branch": "BSC(CS)",
+            "city": "Dewas",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "ysonakshi57@gmail.com",
+            "gender": "female",
+            "hobbies": "Playing Volleyball",
+            "imgPath": "assets/images/sonakshi1.jpg",
+            "mobileNo": "7692089170",
+            "year": "2 year"
+        }
+    },
+    {
+        "id": 6,
+        "name": "Suhasee Talreja",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "suhaseetalreja14@gmail.com",
+            "gender": "Female",
+            "hobbies": "Dancing",
+            "imgPath": "assets/images/suhasee.jpg",
+            "mobileNo": "8821061133",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 7,
+        "name": "arti",
+        "details": {
+            "branch": "BBA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "arti@gmail.com",
+            "gender": "Female",
+            "hobbies": "Singing",
+            "imgPath": "assets/images/images.jpg",
+            "mobileNo": "1061138823",
+            "year": "3 year"
+        }
+    },
+    {
+        "id": 8,
+        "name": "riya",
+        "details": {
+            "branch": "BCOM",
+            "city": "Kannod",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "riya@gmail.com",
+            "gender": "Female",
+            "hobbies": "Cooking",
+            "imgPath": "assets/images/kids.jpg",
+            "mobileNo": "8806113321",
+            "year": "2 year"
+        }
+    },
+    {
+        "id": 9,
+        "name": "raj",
+        "details": {
+            "branch": "BCOM",
+            "city": "Kannod",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "raj@gmail.com",
+            "gender": "Male",
+            "hobbies": "Cooking",
+            "imgPath": "assets/images/Minnion.jpg",
+            "mobileNo": "8813306121",
+            "year": "3 year"
+        }
+    },
+    {
+        "id": 10,
+        "name": "riya",
+        "details": {
+            "branch": "BBA",
+            "city": "Kannod",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "riya@gmail.com",
+            "gender": "Female",
+            "hobbies": "Cooking",
+            "imgPath": "assets/images/minny.jpg",
+            "mobileNo": "8806113321",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 11,
+        "name": "rahul",
+        "details": {
+            "branch": "MICRO",
+            "city": "Ktg",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "rahul@gmail.com",
+            "gender": "Male",
+            "hobbies": "Playing Football",
+            "imgPath": "assets/images/download.png",
+            "mobileNo": "8611338021",
+            "year": "2 year"
+        }
+    },
+    {
+        "id": 12,
+        "name": "Diya",
+        "details": {
+            "branch": "BCA",
+            "city": "Nemavar",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Diya@gmail.com",
+            "gender": "Female",
+            "hobbies": "Painting",
+            "imgPath": "assets/images/doramon.png",
+            "mobileNo": "8806113321",
+            "year": "3 year"
+        }
+    },
+    {
+        "id": 13,
+        "name": "riyal",
+        "details": {
+            "branch": "MICRO",
+            "city": "Ktg",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "riyal@gmail.com",
+            "gender": "Female",
+            "hobbies": "Painting",
+            "imgPath": "assets/images/doras.jpg",
+            "mobileNo": "6106113321",
+            "year": "2 year"
+        }
+    },
+    {
+        "id": 14,
+        "name": "Nikhil",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Nikhil@gmail.com",
+            "gender": "Male",
+            "hobbies": "Playing Cricket",
+            "imgPath": "assets/images/chan.png",
+            "mobileNo": "8806113321",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 15,
+        "name": "Appa",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Appa@gmail.com",
+            "gender": "Female",
+            "hobbies": "Dancing",
+            "imgPath": "assets/images/mon.jpg",
+            "mobileNo": "8806113321",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 16,
+        "name": "Nikhil",
+        "details": {
+            "branch": "BBA",
+            "city": "Nemavar",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Nikhil@gmail.com",
+            "gender": "Male",
+            "hobbies": "Playing Cricket",
+            "imgPath": "assets/images/mon.jpg",
+            "mobileNo": "8803216113",
+            "year": "1 year"
+        }
+    },
+    {
+        "id": 17,
+        "name": "Nirmal",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Nirmal@gmail.com",
+            "gender": "Male",
+            "hobbies": "Playing Cricket",
+            "imgPath": "assets/images/mickey.jpg",
+            "mobileNo": "8806113321",
+            "year": "3 year"
+        }
+    },
+    {
+        "id": 18,
+        "name": "Nirmala",
+        "details": {
+            "branch": "BBA",
+            "city": "Handiya",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Nirmala@gmail.com",
+            "gender": "Female",
+            "hobbies": "Playing Cricket",
+            "imgPath": "assets/images/download.jpg",
+            "mobileNo": "8833210611",
+            "year": "2 year"
+        }
+    },
 
+    {
+        "id": 19,
+        "name": "Heenal",
+        "details": {
+            "branch": "MICRO",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Heenal@gmail.com",
+            "gender": "Male",
+            "hobbies": "Cooking",
+            "imgPath": "assets/images/download.png",
+            "mobileNo": "8806113321",
+            "year": "3 year"
+        }
+    },
+
+    {
+        "id": 20,
+        "name": "nikky",
+        "details": {
+            "branch": "BCA",
+            "city": "Harda",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "nikky@gmail.com",
+            "gender": "Female",
+            "hobbies": "Playing Cricket",
+            "imgPath": "assets/images/mickey.jpg",
+            "mobileNo": "8889481500",
+            "year": "2 year"
+        }
+    },
+
+    {
+        "id": 21,
+        "name": "Mansi",
+        "details": {
+            "branch": "BBA",
+            "city": "HandiyaH",
+            "collegeName": "SSISM,Sandalpur",
+            "emailId": "Mansi@gmail.com",
+            "gender": "Female",
+            "hobbies": "Playing Cricket",
+            "imgPath": "assets/images/dora.jpg",
+            "mobileNo": "8811332061",
+            "year": "3 year"
+        }
+    }
+]
