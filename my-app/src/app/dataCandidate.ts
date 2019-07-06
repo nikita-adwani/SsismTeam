@@ -2,7 +2,7 @@ export const candidateData = [
     {
       candidateName: 'Laveena pahuja',
       candidateDetails: {
-        images: '',
+        images: '  assets/images/suhasee.jpg,',
         emailId: 'laveena2806@gmail.com',
         class: 'BCA',
         year:'1 year',
