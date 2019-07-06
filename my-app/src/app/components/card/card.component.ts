@@ -18,15 +18,18 @@ import { KeysPipe } from "../../pipe/keys.pipe";
 export class CardComponent implements OnInit, OnChanges {
   public cardListData;
   public branchList;
+  public YearList;
 
   public selectedGender;
   public selectedBranch;
+  public selectedYear;
+
 
   @Input("listData") listData: any;
 
   constructor(public keys: KeysPipe) {}
 
-  ngOnInit() {}
+  ngOnInit() {};
 
   ngOnChanges() {
     this.cardListData = this.listData;
@@ -51,6 +54,7 @@ export class CardComponent implements OnInit, OnChanges {
     });
   }
 
+
   showBranch(branch) {
     // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
     this.selectedBranch = branch;
@@ -60,6 +64,17 @@ export class CardComponent implements OnInit, OnChanges {
         : studentObj;
     });
   }
+  showYear(year) {
+    this.selectedYear = year;
+    this.cardListData = this.listData.filter(studentObj => {
+      return year !== ""
+        ? studentObj.details.year.toLowerCase() === year.toLowerCase()
+        : studentObj;
+    });
+    
+    
+  }
+  
 
   //Add Classes in the CandidateData.json
   //showClass - create a function similar to the show gender function - pass the values.
