@@ -20,6 +20,7 @@ export class CardComponent implements OnInit, OnChanges {
   public branchList;
 
   public selectedGender;
+  public selectedBranch;
 
   @Input("listData") listData: any;
 
@@ -52,6 +53,12 @@ export class CardComponent implements OnInit, OnChanges {
 
   showBranch(branch) {
     // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
+    this.selectedBranch = branch;
+    this.cardListData = this.listData.filter(studentObj => {
+      return branch !== ""
+        ? studentObj.details.branch.toLowerCase() === branch.toLowerCase()
+        : studentObj;
+    });
   }
 
   //Add Classes in the CandidateData.json
