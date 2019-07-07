@@ -1,44 +1,46 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
- import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-//  import { AppRoutingModule, routes} from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { DetailsComponent } from './details/details.component';
-import { HttpClientModule } from '@angular/common/http';
-import {StudentListComponent} from './student-list/student-list.component';
-import { RouterModule } from '@angular/router';
-// import { FrontpageComponent } from './frontpage/frontpage.component';
-import { DetailComponent } from './detail/detail.component';
-import { StartingpageComponent } from './startingpage/startingpage.component';
-import { routes } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { HttpClientModule } from "@angular/common/http";
 
+import { RouterModule } from "@angular/router";
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./components/header/header.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { StartingpageComponent } from "./components/startingpage/startingpage.component";
+import { StudentListComponent } from "./components/student-list/student-list.component";
+import { CardComponent } from "./components/card/card.component";
+import { DetailsComponent } from "./components/details/details.component";
 
-// let myRoutes = [
-//   { path: 'student/:candidateId', component:  DetailComponent}
-// ]
+import { routes } from "./app-routing.module";
+import { DataService } from "./services/data.service";
+import { HomeComponent } from "./pages/home/home.component";
+import { StudentsComponent } from "./pages/students/students.component";
+import { KeysPipe } from "./pipe/keys.pipe";
+import { StudentDetailsComponent } from './pages/student-details/student-details.component';
 @NgModule({
   declarations: [
     AppComponent,
-
-    DetailsComponent,
-    StartingpageComponent,
     HeaderComponent,
     FooterComponent,
+    StartingpageComponent,
     StudentListComponent,
-    DetailComponent
-
+    CardComponent,
+    DetailsComponent,
+    HomeComponent,
+    StudentsComponent,
+    KeysPipe,
+    StudentDetailsComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [DataService, KeysPipe],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

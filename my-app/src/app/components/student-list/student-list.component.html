@@ -1,0 +1,36 @@
+<div class="card-container mx-auto mt-5">
+
+    <div class="card card-front w-100">
+
+        <div class="card-body">
+            <img src="./assets/ssism.png" class="img-fluid">
+
+        </div>
+    </div>
+    <div class="card card-back w-100">
+        <div class="card-body bg-light">
+            <h1 class="text-center">Student List</h1>
+
+            <div class="centered">
+                <div *ngIf=candidates>
+                    <div *ngFor="let candidate of candidates">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+
+                                <a [routerLink]="['/detail', candidate.id]">
+                          {{candidate.candidateName}}
+                          </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bottom-right">
+
+                    <button type="button" class="btn btn-lg btn-outline-info mt-5" [routerLink]="['/detail/all']">View All</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>

@@ -2,9 +2,10 @@ export const candidateData = [
     {
       candidateName: 'Laveena pahuja',
       candidateDetails: {
-        images: '',
+        images: '  assets/images/suhasee.jpg,',
         emailId: 'laveena2806@gmail.com',
         class: 'BCA',
+        year:'1 year',
         address: 'Badi sindhi colony Harda',
         city: 'Harda',
         fatherName: 'Rajendra Pahuja',
@@ -20,6 +21,7 @@ export const candidateData = [
         images: '',
         emailId: 'niknikkynikitagmail.com',
         class: 'BCA',
+        year:'1 year',
         address: '16,Badi sindhi colony Harda',
         city: 'Harda',
         fatherName: 'Sunil Adwani',
