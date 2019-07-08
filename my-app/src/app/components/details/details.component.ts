@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,  Input, AfterViewInit,
+  AfterContentInit,
+  OnChanges } from '@angular/core';
 import { DataService } from "../../services/data.service";
 import { Router, ActivatedRoute } from "@angular/router";
+import { KeysPipe } from "../../pipe/keys.pipe";
 
 
 @Component({
@@ -8,13 +11,15 @@ import { Router, ActivatedRoute } from "@angular/router";
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
-export class DetailsComponent implements OnInit {
+export class DetailsComponent implements OnInit  {
   public candidates: any;
   public candidateCandidateDetails: any;
   public candidateId = null;
-  public details;
+  public item;
+  @Input("listData") listData: any;
 
-  constructor(
+
+  constructor(public keys: KeysPipe,
     private dataService: DataService,
     private router: Router,
     private route: ActivatedRoute
@@ -28,7 +33,7 @@ export class DetailsComponent implements OnInit {
       this.candidates = data;
       this.candidates.forEach(c => {
         if (c.id === Number(this.candidateId)) {
-          this.details = c;
+          this.item = c;
         }
       });
     });
