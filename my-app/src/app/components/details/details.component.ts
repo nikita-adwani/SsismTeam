@@ -58,9 +58,10 @@ export class DetailsComponent implements OnInit {
 
 
     return 'Hello,  My name is ' + data.name + '. I am from ' +
-    data.details.city +'.I am pursuring' +data.details.branch+'from' + data.details.collegeName + ', and currently I am  in' +
+    data.details.city +'.I am pursuring' +data.details.branch+'from' + data.details.collegeName + 
+    ', and currently I am in ' +
      data.details.year + ', '
-    +  '. and my hobbies are ' + data.details.hobbies;
+    +  '. and my hobby is ' + data.details.hobbies;
   }
   
    saySomething() {
@@ -72,13 +73,24 @@ export class DetailsComponent implements OnInit {
     setTimeout(() => {
       console.log(window.speechSynthesis.getVoices());
       voices = window.speechSynthesis.getVoices();
-      msg.voice = voices[8]; // try changing the number and hear different voices.
+      if (this.item.details.gender==="male"){
+      msg.voice = voices[4]; // try changing the number and hear different voices.
       // msg.voiceURI = "native";
       msg.volume = 1; // 0 to 1
       msg.rate = 1; // 0.1 to 10
       msg.pitch = 0; //0 to 2
       console.log(msg);
-      window.speechSynthesis.speak(msg);
+      window.speechSynthesis.speak(msg)}
+      else
+      {
+        msg.voice = voices[8]; // try changing the number and hear different voices.
+        // msg.voiceURI = "native";
+        msg.volume = 1; // 0 to 1
+        msg.rate = 1; // 0.1 to 10
+        msg.pitch = 0; //0 to 2
+        console.log(msg);
+        window.speechSynthesis.speak(msg)
+      }
       msg.onerror = function(event) {
         console.log(
           "An error has occurred with the speech synthesis: " + event.error
