@@ -1,29 +1,19 @@
 <div class="container-fluid">
     <h1>details</h1>
 
-    <div [ngClass]="'card'">
-        <!-- <img src="
-                  {{details?.candidateDetails.imgPath}}" class="img-fluid "> -->
-        <div class="container">
-            <h4>{{item?.name}}</h4>
-            
-<!-- 
-            <p>
-                Hello, My name is {{details?.candidateName}}. 
-                I am from {{details?.candidateDetails.city}} (M.P).
-                 I am persuing {{details?.candidateDetails.class}} from
-                  {{details?.candidateDetails.collegeName}}. 
-                  
-                  My father's name is {{details?.candidateDetails.fatherName}}
-                  and My mother's name is {{details?.candidateDetails.motherName}} ,
-                   and My hobby is {{details?.candidateDetails.hobbies}}
-
-
-            </p> -->
-
-            <button type="button" class="btn btn-info" (click)="saySomething()">More
-                Details</button>
+  
+          
+        
+<div class="card mt-5" id="cards">
+    <img src="{{item?.details?.imgPath}}" alt="Avatar">
+    <div class="container" id="cards">
+        <h4>{{item?.name}}</h4>
+        <p>"Hello , My name is {{item?.name}}, and I am from {{item?.details?.city}}. I am pursuring {{item?.details?.branch}} from {{item?.details?.collegeName}}, ,and currently in {{item?.details?.year}} ,and my hobby is {{item?.details?.hobbies}}
+        </p>
+        <div class="card-footer">
+            <button type="button" class="btn btn-info mr-4" [routerLink]="['/students']">BACK</button>
+            <button type="button" class="btn btn-info ml-4" (click)="saySomething()"> <i class="fa fa-volume-up"></i> speak </button>
         </div>
-
     </div>
+</div>
 </div>
