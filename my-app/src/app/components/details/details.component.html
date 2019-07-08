@@ -2,11 +2,12 @@
     <h1>details</h1>
 
     <div [ngClass]="'card'">
-        <img src="
-                  {{details?.candidateDetails.imgPath}}" class="img-fluid ">
+        <!-- <img src="
+                  {{details?.candidateDetails.imgPath}}" class="img-fluid "> -->
         <div class="container">
-            <h4>{{details?.candidateName}}</h4>
-
+            <h4>{{item?.name}}</h4>
+            
+<!-- 
             <p>
                 Hello, My name is {{details?.candidateName}}. 
                 I am from {{details?.candidateDetails.city}} (M.P).
@@ -18,9 +19,10 @@
                    and My hobby is {{details?.candidateDetails.hobbies}}
 
 
-            </p>
+            </p> -->
 
-
+            <button type="button" class="btn btn-info" (click)="saySomething()">More
+                Details</button>
         </div>
 
     </div>
