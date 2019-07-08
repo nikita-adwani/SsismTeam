@@ -18,7 +18,8 @@ import { DataService } from "./services/data.service";
 import { HomeComponent } from "./pages/home/home.component";
 import { StudentsComponent } from "./pages/students/students.component";
 import { KeysPipe } from "./pipe/keys.pipe";
-import { StudentDetailsComponent } from './pages/student-details/student-details.component';
+import { StudentDetailsComponent } from "./pages/student-details/student-details.component";
+import { FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { StudentDetailsComponent } from './pages/student-details/student-details
     BrowserAnimationsModule,
     NgbModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [DataService, KeysPipe],
