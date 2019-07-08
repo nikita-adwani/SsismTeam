@@ -76,6 +76,9 @@ export class CardComponent implements OnInit, OnChanges {
   }
   
 
+
+  }
+  
+
   //Add Classes in the CandidateData.json
   //showClass - create a function similar to the show gender function - pass the values.
-}
