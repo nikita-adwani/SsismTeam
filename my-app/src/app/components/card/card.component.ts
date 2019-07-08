@@ -48,46 +48,45 @@ export class CardComponent implements OnInit, OnChanges {
   }
 
   filterData() {
+    if(this.filter.gender){
+      this.cardListData = this.listData.filter(eachData => {
+        if(this.filter.gender.toLowerCase() === 'all') {
+          return true;
+        }
+        return eachData.details.gender.toLowerCase() === this.filter.gender.toLowerCase()
+      });
+    }
 
+    if(this.filter.branch) {
+      this.cardListData = this.cardListData.filter(eachData => {
+        console.log(eachData)
+        return eachData.details.branch.toLowerCase() === this.filter.branch.toLowerCase()
+      });
+    }
+    
+
+    if(this.filter.year) {
+      this.cardListData = this.cardListData.filter(eachData=> {
+        return eachData.details.year.toLowerCase() === this.filter.year.toLowerCase()
+      })
+    }
+    
   }
 
   showGender(gender) {
     this.filter.gender = gender;
     this.filterData();
-    this.selectedGender = gender;
-    //this.getDataBasedOnFilterObj();
-
-    this.cardListData = this.listData.filter(studentObj => {
-      return gender !== ""
-        ? studentObj.details.gender.toLowerCase() === gender.toLowerCase()
-        : studentObj;
-    });
   }
 
 
   showBranch(branch) {
     this.filter.branch = branch;
     this.filterData();
-    // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
-    this.selectedBranch = branch;
-    //this.getDataBasedOnFilterObj();
-    this.cardListData = this.listData.filter(studentObj => {
-      return branch !== ""
-        ? studentObj.details.branch.toLowerCase() === branch.toLowerCase()
-        : studentObj;
-    });
   }
 
   showYear(year) {
     this.filter.year = year;
     this.filterData();
-    this.selectedYear = year;
-    // this.getDataBasedOnFilterObj();
-    this.cardListData = this.listData.filter(studentObj => {
-      return year !== ""
-        ? studentObj.details.year.toLowerCase() === year.toLowerCase()
-        : studentObj;
-    }); 
   }
 
   // get data based on the all filter 
@@ -100,31 +99,7 @@ export class CardComponent implements OnInit, OnChanges {
 
     let filteredData = [];
     let filterObjData= this.listData.forEach(studentObj => {
-        // console.log(studentObj);
-        
-      // for (let keys in selectedFilterObj){
-      //   if(selectedFilterObj[keys] !== ""){
-
-      //       if(studentObj.details[keys] === )
-
-      //   }
-      // }
-
-
-        
-        // if(
-        //   studentObj.details.year.toLowerCase() === selectedFilterObj.year.toLowerCase() && 
-        //   studentObj.details.branch.toLowerCase() === selectedFilterObj.branch.toLowerCase() &&
-        //   studentObj.details.gender.toLowerCase() === selectedFilterObj.gender.toLowerCase()
-        // ){
-        // return filterObjData
-        // }
-
-        
-        // else{
-        //   return studentObj;
-        // }
-        
+      
         
     });
   }
