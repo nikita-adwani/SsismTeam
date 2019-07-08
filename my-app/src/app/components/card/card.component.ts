@@ -25,6 +25,11 @@ export class CardComponent implements OnInit, OnChanges {
   public selectedYear = "";
   public selectedFilter = "";
   searchName: any;
+  filter = {
+    year: null,
+    branch: null,
+    gender : null,
+  }
 
   @Input("listData") listData: any;
 
@@ -42,37 +47,47 @@ export class CardComponent implements OnInit, OnChanges {
     }
   }
 
-  showGender(gender) {
-    this.selectedGender = gender;
-this.getDataBasedOnFilterObj();
+  filterData() {
 
-    // this.cardListData = this.listData.filter(studentObj => {
-    //   return gender !== ""
-    //     ? studentObj.details.gender.toLowerCase() === gender.toLowerCase()
-    //     : studentObj;
-    // });
+  }
+
+  showGender(gender) {
+    this.filter.gender = gender;
+    this.filterData();
+    this.selectedGender = gender;
+    //this.getDataBasedOnFilterObj();
+
+    this.cardListData = this.listData.filter(studentObj => {
+      return gender !== ""
+        ? studentObj.details.gender.toLowerCase() === gender.toLowerCase()
+        : studentObj;
+    });
   }
 
 
   showBranch(branch) {
+    this.filter.branch = branch;
+    this.filterData();
     // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
     this.selectedBranch = branch;
-    this.getDataBasedOnFilterObj();
-    // this.cardListData = this.listData.filter(studentObj => {
-    //   return branch !== ""
-    //     ? studentObj.details.branch.toLowerCase() === branch.toLowerCase()
-    //     : studentObj;
-    // });
+    //this.getDataBasedOnFilterObj();
+    this.cardListData = this.listData.filter(studentObj => {
+      return branch !== ""
+        ? studentObj.details.branch.toLowerCase() === branch.toLowerCase()
+        : studentObj;
+    });
   }
+
   showYear(year) {
+    this.filter.year = year;
+    this.filterData();
     this.selectedYear = year;
-    this.getDataBasedOnFilterObj();
-    // this.cardListData = this.listData.filter(studentObj => {
-    //   return year !== ""
-    //     ? studentObj.details.year.toLowerCase() === year.toLowerCase()
-    //     : studentObj;
-    // });
-   
+    // this.getDataBasedOnFilterObj();
+    this.cardListData = this.listData.filter(studentObj => {
+      return year !== ""
+        ? studentObj.details.year.toLowerCase() === year.toLowerCase()
+        : studentObj;
+    }); 
   }
 
   // get data based on the all filter 
@@ -87,13 +102,14 @@ this.getDataBasedOnFilterObj();
     let filterObjData= this.listData.forEach(studentObj => {
         // console.log(studentObj);
         
-      for (let keys in selectedFilterObj){
-        if(selectedFilterObj[keys] !== ""){
+      // for (let keys in selectedFilterObj){
+      //   if(selectedFilterObj[keys] !== ""){
 
-            if(studentObj.details[keys] === )
+      //       if(studentObj.details[keys] === )
 
-        }
-      }
+      //   }
+      // }
+
 
         
         // if(
@@ -104,6 +120,7 @@ this.getDataBasedOnFilterObj();
         // return filterObjData
         // }
 
+        
         // else{
         //   return studentObj;
         // }
