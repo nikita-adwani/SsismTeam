@@ -42,9 +42,9 @@ export class CardComponent implements OnInit, OnChanges {
     }
   }
 
-  showGender(gender) {
-    this.selectedGender = gender;
-this.getDataBasedOnFilterObj();
+//   showGender(gender) {
+//     this.selectedGender = gender;
+// this.getDataBasedOnFilterObj();
 
     // this.cardListData = this.listData.filter(studentObj => {
     //   return gender !== ""
@@ -54,46 +54,46 @@ this.getDataBasedOnFilterObj();
   }
 
 
-  showBranch(branch) {
-    // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
-    this.selectedBranch = branch;
-    this.getDataBasedOnFilterObj();
+  // showBranch(branch) {
+  //   // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
+  //   this.selectedBranch = branch;
+  //   this.getDataBasedOnFilterObj();
     // this.cardListData = this.listData.filter(studentObj => {
     //   return branch !== ""
     //     ? studentObj.details.branch.toLowerCase() === branch.toLowerCase()
     //     : studentObj;
-    // });
-  }
-  showYear(year) {
-    this.selectedYear = year;
-    this.getDataBasedOnFilterObj();
+  //   // });
+  // }
+  // showYear(year) {
+  //   this.selectedYear = year;
+  //   this.getDataBasedOnFilterObj();
     // this.cardListData = this.listData.filter(studentObj => {
     //   return year !== ""
     //     ? studentObj.details.year.toLowerCase() === year.toLowerCase()
     //     : studentObj;
     // });
    
-  }
+  
 
   // get data based on the all filter 
-  getDataBasedOnFilterObj() {
-    let selectedFilterObj = {
-      gender: this.selectedGender,
-      branch: this.selectedBranch,
-      year: this.selectedYear
-    }
+  // getDataBasedOnFilterObj() {
+  //   let selectedFilterObj = {
+  //     gender: this.selectedGender,
+  //     branch: this.selectedBranch,
+  //     year: this.selectedYear
+  //   }
 
-    let filteredData = [];
-    let filterObjData= this.listData.forEach(studentObj => {
-        // console.log(studentObj);
+    // let filteredData = [];
+    // let filterObjData= this.listData.forEach(studentObj => {
+    //     // console.log(studentObj);
         
-      for (let keys in selectedFilterObj){
-        if(selectedFilterObj[keys] !== ""){
+    //   for (let keys in selectedFilterObj){
+    //     if(selectedFilterObj[keys] !== ""){
 
-            if(studentObj.details[keys] === )
+    //         if(studentObj.details[keys] === )
 
-        }
-      }
+    //     }
+    //   }
 
         
         // if(
@@ -106,14 +106,13 @@ this.getDataBasedOnFilterObj();
 
         // else{
         //   return studentObj;
-        // }
+  //       // }
         
         
-    });
-  }
+  //   });
+  // }
 
-
-
+  
   //Add Classes in the CandidateData.json
   //showClass - create a function similar to the show gender function - pass the values.
-}
+  

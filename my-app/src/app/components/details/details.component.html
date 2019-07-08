@@ -2,11 +2,11 @@
     <img src="{{item?.details?.imgPath}}" alt="Avatar">
     <div class="container" id="cards">
         <h4>{{item?.name}}</h4>
-        <p>"Hello , My name is {{item?.name}}, and I am from {{item?.details?.city}}. I am pursuring {{item?.details?.branch}} from {{item?.details?.collegeName}}, ,and currently in {{item?.details?.year}} ,and my hobby is {{item?.details?.hobbies}}
+        <p>"Hello , My name is {{item?.name}}, and I am from {{item?.details?.city}}. I am pursuring {{item?.details?.branch}} from {{item?.details?.collegeName}}, ,and currently in {{item?.details?.year}} ,and my hobby is {{item?.details?.hobbies}}.
         </p>
         <div class="card-footer">
             <button type="button" class="btn btn-info mr-4" [routerLink]="['/students']">BACK</button>
-            <button type="button" class="btn btn-info ml-4"> <i class="fa fa-volume-up"></i> speak </button>
+            <button type="button" class="btn btn-info ml-4" (click)=saySomething()> <i class="fa fa-volume-up"></i> speak </button>
         </div>
     </div>
 </div>
