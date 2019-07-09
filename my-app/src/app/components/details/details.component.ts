@@ -75,7 +75,7 @@ export class DetailsComponent implements OnInit {
       voices = window.speechSynthesis.getVoices();
       if (this.item.details.gender === "male" || this.item.details.gender === "Male" ){
       msg.voice = voices[5]; // try changing the number and hear different voices.
-      // msg.voiceURI = "native";
+      voiceURI: "Google UK English Male";
       msg.volume = 1; // 0 to 1
       msg.rate = 1; // 0.1 to 10
       msg.pitch = 0; //0 to 2
@@ -84,7 +84,7 @@ export class DetailsComponent implements OnInit {
       else
       {
         msg.voice = voices[3]; // try changing the number and hear different voices.
-        // msg.voiceURI = "native";
+        voiceURI: "Google US English";
         msg.volume = 1; // 0 to 1
         msg.rate = 1; // 0.1 to 10
         msg.pitch = 0; //0 to 2
