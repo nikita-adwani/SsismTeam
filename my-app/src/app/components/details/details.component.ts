@@ -81,7 +81,7 @@ export class DetailsComponent implements OnInit {
       msg.pitch = 0; //0 to 2
       console.log(msg);
       window.speechSynthesis.speak(msg)}
-      else
+      else      
       {
         msg.voice = voices[3]; // try changing the number and hear different voices.
        msg.voiceURI = "Google US English";
