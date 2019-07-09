@@ -17,72 +17,148 @@ import { KeysPipe } from "../../pipe/keys.pipe";
 })
 export class CardComponent implements OnInit, OnChanges {
   public cardListData;
+  public genderList;
   public branchList;
-  public YearList;
-
-  public selectedGender ="";
-  public selectedBranch ="";
+  public yearList;
+  public selectedGender = "";
+  public selectedBranch = "";
   public selectedYear = "";
   public selectedFilter = "";
-  searchName: any;
+  filter = {
+    year: null,
+    branch: null,
+    gender: null
+  };
 
   @Input("listData") listData: any;
 
-  constructor(public keys: KeysPipe) { }
+  constructor(public keys: KeysPipe) {}
+  //Create a private backing field
+  public _searchName = "";
 
-  ngOnInit() { };
+  get searchName(): string {
+    return this._searchName;
+  }
+
+  set searchName(value: string) {
+    this._searchName = value;
+    if (this._searchName === "") {
+      this.cardListData = this.listData;
+    } else {
+      this.filterBySearchName(this._searchName);
+    }
+  }
+
+  clearSearchName() {
+    this.searchName = "";
+    this.cardListData = this.listData;
+  }
+
+  filterBySearchName(searchString) {
+    // let searchString = this.searchName;
+
+    //Clear all filters
+    for (let key in this.filter) {
+      this.filter[key] = null;
+    }
+    //Call filter data to clear to reset the selections
+    this.filterData();
+
+    let studentList = this.cardListData;
+
+    //console.log("filtercalled", searchString);
+    this.cardListData = studentList.filter(
+      student =>
+        student.name.toLowerCase().indexOf(searchString.toLowerCase()) !== -1
+    );
+  }
+
+  ngOnInit() {}
 
   ngOnChanges() {
     this.cardListData = this.listData;
     if (this.listData) {
+      let genders = this.listData.map(studentObj => {
+        return studentObj.details.gender.toLowerCase();
+      });
+
+      this.genderList = [...new Set(genders)];
+
       let branches = this.listData.map(studentObj => {
         return studentObj.details.branch;
       });
       this.branchList = [...new Set(branches)];
+
+      let years = this.listData.map(studentObj => {
+        return studentObj.details.year;
+      });
+      this.yearList = [...new Set(years)];
+    }
+  }
+
+  filterData() {
+    this.cardListData = this.listData;
+
+    if (this.filter.gender) {
+      this.cardListData = this.listData.filter(eachData => {
+        if (this.filter.gender.toLowerCase() === "all") {
+          return true;
+        }
+        return (
+          eachData.details.gender.toLowerCase() ===
+          this.filter.gender.toLowerCase()
+        );
+      });
+    }
+
+    if (this.filter.branch) {
+      this.cardListData = this.cardListData.filter(eachData => {
+        if (this.filter.branch.toLowerCase() === "all") {
+          return true;
+        }
+        return (
+          eachData.details.branch.toLowerCase() ===
+          this.filter.branch.toLowerCase()
+        );
+      });
+    }
+
+    if (this.filter.year) {
+      this.cardListData = this.cardListData.filter(eachData => {
+        if (this.filter.year.toLowerCase() === "all") {
+          return true;
+        }
+        return (
+          eachData.details.year.toLowerCase() === this.filter.year.toLowerCase()
+        );
+      });
     }
   }
 
   showGender(gender) {
-    this.selectedGender = gender;
-this.getDataBasedOnFilterObj();
-
-    // this.cardListData = this.listData.filter(studentObj => {
-    //   return gender !== ""
-    //     ? studentObj.details.gender.toLowerCase() === gender.toLowerCase()
-    //     : studentObj;
-    // });
+    this.filter.gender = gender;
+    this.filterData();
   }
-
 
   showBranch(branch) {
-    // Filter by branch, just copy the above and change to branch instead of gender...yeh to tum se hojayega.
-    this.selectedBranch = branch;
-    this.getDataBasedOnFilterObj();
-    // this.cardListData = this.listData.filter(studentObj => {
-    //   return branch !== ""
-    //     ? studentObj.details.branch.toLowerCase() === branch.toLowerCase()
-    //     : studentObj;
-    // });
-  }
-  showYear(year) {
-    this.selectedYear = year;
-    this.getDataBasedOnFilterObj();
-    // this.cardListData = this.listData.filter(studentObj => {
-    //   return year !== ""
-    //     ? studentObj.details.year.toLowerCase() === year.toLowerCase()
-    //     : studentObj;
-    // });
-   
+    this.filter.branch = branch;
+    this.filterData();
   }
 
-  // get data based on the all filter 
+  showYear(year) {
+    this.filter.year = year;
+    this.filterData();
+  }
+
+  // get data based on the all filter
   getDataBasedOnFilterObj() {
     let selectedFilterObj = {
       gender: this.selectedGender,
       branch: this.selectedBranch,
       year: this.selectedYear
-    }
+    };
 
+<<<<<<< HEAD
   //   let filteredData = [];
   //   let filterObjData= this.listData.forEach(studentObj => {
   //       // console.log(studentObj);
@@ -115,8 +191,12 @@ this.getDataBasedOnFilterObj();
 
 
 
+=======
+    let filteredData = [];
+    let filterObjData = this.listData.forEach(studentObj => {});
+>>>>>>> d06c1b526b812c4c8b05f8bd0d5d4213f29132a7
   }
-  
 
   //Add Classes in the CandidateData.json
   //showClass - create a function similar to the show gender function - pass the values.
+}
