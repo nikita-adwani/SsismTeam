@@ -83,34 +83,34 @@ this.getDataBasedOnFilterObj();
       year: this.selectedYear
     }
 
-    let filteredData = [];
-    let filterObjData= this.listData.forEach(studentObj => {
-        // console.log(studentObj);
+  //   let filteredData = [];
+  //   let filterObjData= this.listData.forEach(studentObj => {
+  //       // console.log(studentObj);
         
-      for (let keys in selectedFilterObj){
-        if(selectedFilterObj[keys] !== ""){
+  //     for (let keys in selectedFilterObj){
+  //       if(selectedFilterObj[keys] !== ""){
 
-            if(studentObj.details[keys] === )
+  //           if(studentObj.details[keys] === )
 
-        }
-      }
+  //       }
+  //     }
 
         
-        // if(
-        //   studentObj.details.year.toLowerCase() === selectedFilterObj.year.toLowerCase() && 
-        //   studentObj.details.branch.toLowerCase() === selectedFilterObj.branch.toLowerCase() &&
-        //   studentObj.details.gender.toLowerCase() === selectedFilterObj.gender.toLowerCase()
-        // ){
-        // return filterObjData
-        // }
+  //       // if(
+  //       //   studentObj.details.year.toLowerCase() === selectedFilterObj.year.toLowerCase() && 
+  //       //   studentObj.details.branch.toLowerCase() === selectedFilterObj.branch.toLowerCase() &&
+  //       //   studentObj.details.gender.toLowerCase() === selectedFilterObj.gender.toLowerCase()
+  //       // ){
+  //       // return filterObjData
+  //       // }
 
-        // else{
-        //   return studentObj;
-        // }
+  //       // else{
+  //       //   return studentObj;
+  //       // }
         
         
-    });
-  }
+  //   });
+  // }
 
 
 
