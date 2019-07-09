@@ -158,43 +158,8 @@ export class CardComponent implements OnInit, OnChanges {
       year: this.selectedYear
     };
 
-<<<<<<< HEAD
-  //   let filteredData = [];
-  //   let filterObjData= this.listData.forEach(studentObj => {
-  //       // console.log(studentObj);
-        
-  //     for (let keys in selectedFilterObj){
-  //       if(selectedFilterObj[keys] !== ""){
-
-  //           if(studentObj.details[keys] === )
-
-  //       }
-  //     }
-
-        
-  //       // if(
-  //       //   studentObj.details.year.toLowerCase() === selectedFilterObj.year.toLowerCase() && 
-  //       //   studentObj.details.branch.toLowerCase() === selectedFilterObj.branch.toLowerCase() &&
-  //       //   studentObj.details.gender.toLowerCase() === selectedFilterObj.gender.toLowerCase()
-  //       // ){
-  //       // return filterObjData
-  //       // }
-
-  //       // else{
-  //       //   return studentObj;
-  //       // }
-        
-        
-  //   });
-  // }
-
-
-
-
-=======
     let filteredData = [];
     let filterObjData = this.listData.forEach(studentObj => {});
->>>>>>> d06c1b526b812c4c8b05f8bd0d5d4213f29132a7
   }
 
   //Add Classes in the CandidateData.json

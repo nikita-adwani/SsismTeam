@@ -68,7 +68,7 @@ export class DetailsComponent implements OnInit {
     // call the server, http module
 
     let speak = this.createSpeechText(this.item); //"My name is " + textData.name + " and I am " + textData.age + " years old."
-    let msg = new SpeechSynthesisUtterance(speak);
+    let msg :any = new SpeechSynthesisUtterance(speak);
     var voices = window.speechSynthesis.getVoices();
     setTimeout(() => {
       console.log(window.speechSynthesis.getVoices());
