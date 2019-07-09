@@ -73,8 +73,8 @@ export class DetailsComponent implements OnInit {
     setTimeout(() => {
       console.log(window.speechSynthesis.getVoices());
       voices = window.speechSynthesis.getVoices();
-      if (this.item.details.gender==="male"){
-      msg.voice = voices[4]; // try changing the number and hear different voices.
+      if (this.item.details.gender === "male" || this.item.details.gender === "Male" ){
+      msg.voice = voices[5]; // try changing the number and hear different voices.
       // msg.voiceURI = "native";
       msg.volume = 1; // 0 to 1
       msg.rate = 1; // 0.1 to 10
@@ -83,7 +83,7 @@ export class DetailsComponent implements OnInit {
       window.speechSynthesis.speak(msg)}
       else
       {
-        msg.voice = voices[8]; // try changing the number and hear different voices.
+        msg.voice = voices[3]; // try changing the number and hear different voices.
         // msg.voiceURI = "native";
         msg.volume = 1; // 0 to 1
         msg.rate = 1; // 0.1 to 10
