@@ -8,7 +8,7 @@
 } from "@angular/core";
 import { DataService } from "../../services/data.service";
 
-import { RewardserviceService } from "../../services/rewardservice.service";
+import { RewardserviceService } from "../../services/sonarewardservice.service";
 
 import { Router, ActivatedRoute } from "@angular/router";
 import { KeysPipe } from "../../pipe/keys.pipe";
