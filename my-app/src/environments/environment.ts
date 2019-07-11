@@ -12,7 +12,10 @@ export const environment = {
 
   // rewardURL: "http://localhost:1010",
 
+<<<<<<< HEAD
   // rewardURL: "http://localhost:9090",
+=======
+>>>>>>> 1e9dae09767ff17a70741043185655f6838a80f3
   suhaseeRewardURL: "http://localhost:2121"
 };
 
