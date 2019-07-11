@@ -20,6 +20,7 @@ import { StudentsComponent } from "./pages/students/students.component";
 import { KeysPipe } from "./pipe/keys.pipe";
 import { StudentDetailsComponent } from "./pages/student-details/student-details.component";
 import { FormsModule } from "@angular/forms";
+import { rewardData } from './datarewars';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { FormsModule } from "@angular/forms";
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [DataService, KeysPipe],
+  providers: [DataService, KeysPipe,rewardData
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
