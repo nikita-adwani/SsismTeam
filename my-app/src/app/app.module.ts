@@ -47,7 +47,7 @@ import { FormsModule } from "@angular/forms";
  
 
   
-  providers: [DataService, KeysPipe , RewardserviceService,],
+  providers: [DataService, KeysPipe , RewardserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

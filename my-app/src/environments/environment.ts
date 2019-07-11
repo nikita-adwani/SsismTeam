@@ -9,12 +9,14 @@ export const environment = {
   
   // rewardURL: "http://localhost:9090",
 
+  piyushrewardURL: "http://localhost:1111",
 
   nikitaRewardURL:"http://localhost:7700",
 
   // rewardURL: "http://localhost:1010",
 
   
+  // rewardURL: "http://localhost:9090",
   suhaseeRewardURL: "http://localhost:2121"
 };
 
