@@ -15,6 +15,8 @@ import { DetailsComponent } from "./components/details/details.component";
 
 import { routes } from "./app-routing.module";
 import { DataService } from "./services/data.service";
+import { RewardserviceService } from "./services/laveenarewardservice.service";
+
 import { HomeComponent } from "./pages/home/home.component";
 import { StudentsComponent } from "./pages/students/students.component";
 import { KeysPipe } from "./pipe/keys.pipe";
@@ -42,7 +44,8 @@ import { FormsModule } from "@angular/forms";
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [DataService, KeysPipe],
+  providers: [DataService, KeysPipe,RewardserviceService],
+
   bootstrap: [AppComponent]
 })
 export class AppModule {}

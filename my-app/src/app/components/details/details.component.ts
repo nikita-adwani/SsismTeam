@@ -68,14 +68,14 @@ export class DetailsComponent implements OnInit {
     // call the server, http module
 
     let speak = this.createSpeechText(this.item); //"My name is " + textData.name + " and I am " + textData.age + " years old."
-    let msg = new SpeechSynthesisUtterance(speak);
+    let msg :any = new SpeechSynthesisUtterance(speak);
     var voices = window.speechSynthesis.getVoices();
     setTimeout(() => {
       console.log(window.speechSynthesis.getVoices());
       voices = window.speechSynthesis.getVoices();
       if (this.item.details.gender === "male" || this.item.details.gender === "Male" ){
       msg.voice = voices[0]; // try changing the number and hear different voices.
-     msg.voiceURI= "Google UK English Male"
+      msg.voiceURI= "Google UK English Male"
       msg.volume = 1; // 0 to 1
       msg.rate = 1; // 0.1 to 10
       msg.pitch = 0; //0 to 2
