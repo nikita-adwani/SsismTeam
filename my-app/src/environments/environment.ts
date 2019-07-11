@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   dataURL: "http://localhost:8080",
-  rewardURL: "http://localhost:1010",
+  rewardURL: "http://localhost:9090",
   nikitaRewardURL: "http://localhost:7700",
   suhaseeRewardURL: "http://localhost:2121",
   myrewardURL: "http://localhost:3000",
   laveenarewardURL: "http://localhost:2727",
-  piyushrewardURL: "http://localhost:1111"
+  piyushrewardURL: "http://localhost:1111",
 };
 /*
  * For easier debugging in development mode, you can import the following file
