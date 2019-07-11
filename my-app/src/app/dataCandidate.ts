@@ -56,13 +56,13 @@ export const candidateData = [
         city: 'Harda',
         fatherName: 'Ramchandra Malviya',
         motherName: 'Madhu Malviya',
-        hobbies: 'Dancing',
+        hobbies: 'Dancing,painting',
         mobileNo: '7440835353',
         collegeName: 'SSISM,Sandalpur'
       }
     },
     {
-      candidateName: 'Sonakshi Yadav',
+      candidateName: 'Sonakshi Yadav', 
       candidateDetails: {
         images: '',
         emailId: 'ysonakshi57@gmail.com',
@@ -72,7 +72,7 @@ export const candidateData = [
         fatherName: 'Gajanand yadav',
         motherName: 'Rama Yadav',
         hobbies: 'Playing Volleyball',
-        mobileNo: '7692089170',
+        mobileNo: '7692089170', 
         collegeName: 'SSISM,Sandalpur'
       }
     },

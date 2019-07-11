@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RewardserviceService } from './rewardservice.service';
+import { RewardserviceService } from './sonarewardservice.service';
 
 describe('RewardserviceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
@@ -10,3 +10,4 @@ describe('RewardserviceService', () => {
     expect(service).toBeTruthy();
   });
 });
+ 
