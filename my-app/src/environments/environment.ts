@@ -4,14 +4,23 @@
 
 export const environment = {
   production: false,
+  
+  // yours server
   dataURL: "http://localhost:8080",
   rewardURL: "http://localhost:9090",
-  nikitaRewardURL: "http://localhost:7700",
-  suhaseeRewardURL: "http://localhost:2121",
-  myrewardURL: "http://localhost:3000",
-  laveenarewardURL: "http://localhost:2727",
-  piyushrewardURL: "http://localhost:1111",
-};
+
+  multiURL: [{"id":1, "name":"laveena" ,"url": "http://localhost:2727" },
+  {"id":2, "name":"nikita" , "url" :"http://localhost:7700"},
+  {"id":3, "name":"piyush" , "url" :"http://localhost:1111"},
+  {"id":4, "name":"prashant" , "url" :"http://localhost:3000"},
+  {"id":5, "name":"sonakshi" , "url" :"http://localhost:2121"},
+  {"id":6, "name":"suhasee" , "url" :"http://localhost:2121"}
+]
+
+
+}
+
+
 /*
  * For easier debugging in development mode, you can import the following file
 

@@ -68,10 +68,10 @@ export class DetailsComponent implements OnInit {
   }
 
   getRewardDetail() {
-    this.rewardService.getRewardDetails().subscribe (data => {
+    this.rewardService.getIndividualRewards( this.candidateId).subscribe (data => {
     this.rewards = data;
     console.log(data);
-      
+      if(data){
       (data as any).forEach(eachReward => {
         this.candidates .forEach(eachStudentData=> {
           if(eachStudentData.id === eachReward.studentID) {
@@ -80,6 +80,8 @@ export class DetailsComponent implements OnInit {
           }
         })
       })
+
+    }
     
   })
 }

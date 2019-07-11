@@ -9,8 +9,8 @@ export class RewardserviceService {
   // dataUrl: string;
 
   constructor(private http: HttpClient) { }
-  rewardURL = environment.rewardURL;
+  rewardUrl = environment.rewardURL;
   getRewardDetails(){
-    return this.http.get(this.rewardURL);
+    return this.http.get(this.rewardUrl);
   }
 }
