@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PiyushrewardserviceService } from './piyushrewardservice.service';
+import { PiyushrewardserviceService } from './piyushRewardService.service';
 
 describe('PiyushrewardserviceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

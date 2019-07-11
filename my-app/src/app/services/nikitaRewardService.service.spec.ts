@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NikitaRewardserviceService } from './nikita-rewardservice.service';
+import { NikitaRewardserviceService } from './nikitaRewardService.service';
 
 describe('NikitaRewardserviceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

@@ -8,7 +8,7 @@ import { DataService } from "../../services/data.service";
 import { Router, ActivatedRoute } from "@angular/router";
 import { KeysPipe } from "../../pipe/keys.pipe";
 import { $ } from 'protractor';
-import { RewardserviceService } from 'src/app/services/sonarewardservice.service';
+import { RewardserviceService } from 'src/app/services/rewardService.service';
 
 @Component({
   selector: 'app-details',
