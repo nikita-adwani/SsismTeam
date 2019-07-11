@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "src/app/services/data.service";
 import { Router, ActivatedRoute } from "@angular/router";
-import { RewardserviceService } from 'src/app/services/rewardservice.service';
+import { RewardserviceService } from 'src/app/services/sonarewardservice.service';
 
 @Component({
   selector: "app-students",
