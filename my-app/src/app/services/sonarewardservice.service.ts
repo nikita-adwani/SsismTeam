@@ -15,7 +15,7 @@ export class RewardserviceService {
 getRewardDetails(){
   // return candidateData;
 
-  return this.http.get(this.rewardUrl);
+  return this.http.get(this.rewardUrl );
  
 }
 }
