@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RewardserviceService } from './laveenarewardservice.service';
+import { RewardserviceService } from './laveenaRewardService.service';
 
 describe('RewardserviceService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
