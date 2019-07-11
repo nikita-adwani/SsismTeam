@@ -1,16 +1,15 @@
 var http = require('http');
 const fs = require('fs');
 
-let candidateData = [];
-fs.readFile('./candidateData.json', (err, data) => {
+let rewardData = [];
+fs.readFile('./rewardData.json', (err, data) => {
         if (err) {
             console.error(err)
             return
         }
-        let rawdata = data
-        candidateData = JSON.parse(rawdata);
-        //console.log(candidateData)
-        ;
+        let rewarddata = data
+        rewardData = JSON.parse(rewarddata);
+        // console.log(rewardData);
     })
     //create a server object:
 http.createServer(function(req, res) {
@@ -22,8 +21,8 @@ http.createServer(function(req, res) {
 
 
     //res.write ("response")
-    res.write(JSON.stringify(candidateData)); //write a response to the client
+    res.write(JSON.stringify(rewardData)); //write a response to the client
 
 
     res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
+}).listen(9090); //the server object listens on port 9090
