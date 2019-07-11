@@ -44,6 +44,8 @@ import { FormsModule } from "@angular/forms";
     FormsModule,
     RouterModule.forRoot(routes)
   ],
+ 
+
   
   providers: [DataService, KeysPipe , RewardserviceService],
   bootstrap: [AppComponent]
