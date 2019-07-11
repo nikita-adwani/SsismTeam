@@ -8,7 +8,20 @@ export default {
   rewardURL: "http://localhost:1010",
   nikitaRewardURL: "http://localhost:7700",
   suhaseeRewardURL: "http://localhost:2121",
-  myrewardURL: "http://localhost:3000"
+  myrewardURL: "http://localhost:3000",
+  laveenarewardURL:"http://localhost:2727",
+  
+  // rewardURL: "http://localhost:9090",
+
+  piyushrewardURL: "http://localhost:1111",
+
+  
+
+  // rewardURL: "http://localhost:1010",
+
+  
+  // rewardURL: "http://localhost:9090",
+  
 };
 /*
  * For easier debugging in development mode, you can import the following file
