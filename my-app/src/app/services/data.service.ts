@@ -5,14 +5,11 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class DataService {
-  // [x: string]: any;
- 
   constructor(private http: HttpClient) {}
   dataUrl = environment.dataURL;  
-
+ 
   getCandidateDetails(){
       // return candidateData;
-
-      return this.http.get(this.dataUrl);
+      return this.http.get(this.dataUrl );
     }
 }

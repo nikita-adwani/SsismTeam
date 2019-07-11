@@ -8,6 +8,7 @@ import { DataService } from "../../services/data.service";
 import { Router, ActivatedRoute } from "@angular/router";
 import { KeysPipe } from "../../pipe/keys.pipe";
 import { $ } from 'protractor';
+import { RewardserviceService } from 'src/app/services/rewardservice.service';
 
 @Component({
   selector: 'app-details',
@@ -20,12 +21,17 @@ export class DetailsComponent implements OnInit {
   public candidateId = null;
   public item;
   @Input("listData") listData: any;
+  // rewardService: any;
+  rewards: any;
+  cardListData: any;
+  candidateData: any;
 
   constructor(
     public keys: KeysPipe,
     private dataService: DataService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    public rewardService : RewardserviceService
   ) { 
     let params = this.route.snapshot.params;
 
@@ -42,8 +48,43 @@ export class DetailsComponent implements OnInit {
     });
   }
   
+  getTotalReward(courses) {
+    if(!courses) {
+      return
+    };
 
+    let totalReward = 0;
+
+    courses.forEach(eachCourse => {
+      if(eachCourse.tasks) {
+        eachCourse.tasks.forEach(eachTask => {
+          // console.log(eachTask.rewards);
+          totalReward = totalReward + (eachTask.rewards? eachTask.rewards : 0);
+        })
+      }
+    })
+    console.log(totalReward)
+    return totalReward;
+  }
+
+  getRewardDetail() {
+    this.rewardService.getRewardDetails().subscribe (data => {
+    this.rewards = data;
+    console.log(data);
+      
+      (data as any).forEach(eachReward => {
+        this.candidates .forEach(eachStudentData=> {
+          if(eachStudentData.id === eachReward.studentID) {
+            eachStudentData.courses = eachReward.courses;
+            eachStudentData.totalReward = this.getTotalReward(eachStudentData.courses);
+          }
+        })
+      })
+    
+  })
+}
   ngOnInit() {
+    this.getRewardDetail();
   }
 
   showCandidate(id) {
@@ -96,7 +137,7 @@ export class DetailsComponent implements OnInit {
           "An error has occurred with the speech synthesis: " + event.error
         );
       };
-    }, 400);
+    }, 300);
   }
 }
 
