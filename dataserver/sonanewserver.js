@@ -2,7 +2,7 @@ var http = require('http');
 const fs = require('fs');
 
 let rewardData = [];
-fs.readFile('./rewardData.json', (err, data) => {
+fs.readFile('./sonarewardData.json', (err, data) => {
         if (err) {
             console.error(err)
             return
@@ -25,4 +25,4 @@ http.createServer(function(req, res) {
 
 
     res.end(); //end the response
-}).listen(9090); //the server object listens on port 9090
+}).listen(1010); //the server object listens on port 9090
