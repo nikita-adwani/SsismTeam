@@ -11,4 +11,7 @@ export class StartingpageComponent implements OnInit {
   @Input("nextpage") nextpage: string;
 
   ngOnInit() {}
+
+
+  
 }

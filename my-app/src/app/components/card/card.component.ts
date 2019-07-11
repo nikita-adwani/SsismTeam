@@ -1,4 +1,4 @@
-import {
+  import {
   Component,
   OnInit,
   Input,
@@ -7,7 +7,9 @@ import {
   OnChanges
 } from "@angular/core";
 import { DataService } from "../../services/data.service";
-import { RewardserviceService } from "../../services/laveenarewardservice.service";
+
+import { RewardserviceService } from "../../services/rewardservice.service";
+
 import { Router, ActivatedRoute } from "@angular/router";
 import { KeysPipe } from "../../pipe/keys.pipe";
 
@@ -17,6 +19,7 @@ import { KeysPipe } from "../../pipe/keys.pipe";
   styleUrls: ["./card.component.scss"]
 })
 export class CardComponent implements OnInit, OnChanges {
+  [x: string]: any;
   public cardListData;
   public genderList;
   public branchList;
@@ -25,6 +28,8 @@ export class CardComponent implements OnInit, OnChanges {
   public selectedBranch = "";
   public selectedYear = "";
   public selectedFilter = "";
+  public rewardData;
+  
   filter = {
     year: null,
     branch: null,
@@ -32,8 +37,13 @@ export class CardComponent implements OnInit, OnChanges {
   };
 
   @Input("listData") listData: any;
+  
+  rewards: any;
+  candidateId: any;
 
-  constructor(public keys: KeysPipe) {}
+  constructor(public keys: KeysPipe, public rewardService : RewardserviceService) {
+    
+  }
   //Create a private backing field
   public _searchName = "";
 
@@ -74,7 +84,9 @@ export class CardComponent implements OnInit, OnChanges {
     );
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    // this.getRewardDetail();
+  }
 
   ngOnChanges() {
     this.cardListData = this.listData;
@@ -160,9 +172,44 @@ export class CardComponent implements OnInit, OnChanges {
     };
 
     let filteredData = [];
-    let filterObjData = this.listData.forEach(studentObj => {});
+    let filterObjData = this.listData.forEach(studentObj => {});  
   }
 
+//   getTotalReward(courses) {
+//     if(!courses) {
+//       return
+//     };
+
+//     let totalReward = 0;
+
+//     courses.forEach(eachCourse => {
+//       if(eachCourse.tasks) {
+//         eachCourse.tasks.forEach(eachTask => {
+//           console.log(eachTask.rewards);
+//           totalReward = totalReward + (eachTask.rewards? eachTask.rewards : 0);
+//         })
+//       }
+//     })
+//     console.log(totalReward)
+//     return totalReward;
+//   }
+
+//   getRewardDetail() {
+//     this.rewardService.getRewardDetails().subscribe (data => {
+//     this.rewards = data;
+//     console.log(data);
+      
+//       (data as any).forEach(eachReward => {
+//         this.cardListData.forEach(eachStudentData=> {
+//           if(eachStudentData.id === eachReward.studentID) {
+//             eachStudentData.courses = eachReward.courses;
+//             eachStudentData.totalReward = this.getTotalReward(eachStudentData.courses);
+//           }
+//         })
+//       })
+    
+//   })
+// }
   //Add Classes in the CandidateData.json
   //showClass - create a function similar to the show gender function - pass the values.
 }

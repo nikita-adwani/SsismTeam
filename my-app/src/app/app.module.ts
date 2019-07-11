@@ -17,11 +17,13 @@ import { routes } from "./app-routing.module";
 import { DataService } from "./services/data.service";
 import { RewardserviceService } from "./services/laveenarewardservice.service";
 
+// import { RewardserviceService } from "./services/rewardservice.service";
 import { HomeComponent } from "./pages/home/home.component";
 import { StudentsComponent } from "./pages/students/students.component";
 import { KeysPipe } from "./pipe/keys.pipe";
 import { StudentDetailsComponent } from "./pages/student-details/student-details.component";
 import { FormsModule } from "@angular/forms";
+//  import { rewardData } from '../../datarewards';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,13 +41,15 @@ import { FormsModule } from "@angular/forms";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgbModule,
+    NgbModule,   
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [DataService, KeysPipe,RewardserviceService],
+ 
 
+  
+  providers: [DataService, KeysPipe , RewardserviceService,],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

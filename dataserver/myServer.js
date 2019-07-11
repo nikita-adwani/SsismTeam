@@ -1,14 +1,14 @@
 var http = require('http');
 const fs = require('fs');
 
-let candidateData = [];
-fs.readFile('./candidateData.json', (err, data) => {
+let myreward = [];
+fs.readFile('./myreward.json', (err, data) => {
         if (err) {
             console.error(err)
             return
         }
         let rawdata = data
-        candidateData = JSON.parse(rawdata);
+        myreward = JSON.parse(rawdata);
         //console.log(candidateData)
         ;
     })
@@ -22,8 +22,8 @@ http.createServer(function(req, res) {
 
 
     //res.write ("response")
-    res.write(JSON.stringify(candidateData)); //write a response to the client
+    res.write(JSON.stringify(myreward)); //write a response to the client
 
 
     res.end(); //end the response
-}).listen(8080); //the server object listens on port 8080
+}).listen(3000); //the server object listens on port 8080
