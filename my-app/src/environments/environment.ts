@@ -5,12 +5,11 @@
 export const environment = {
   production: false,
   dataURL: "http://localhost:8080",
-
   rewardURL: "http://localhost:9090",
   nikitaRewardURL:"http://localhost:7700",
 
   // rewardURL: "http://localhost:1010",
-
+  sonaRewardURL: "http://localhost:1011",
   suhaseeRewardURL: "http://localhost:2121"
 };
 

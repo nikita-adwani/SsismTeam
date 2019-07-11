@@ -15,7 +15,7 @@ import { DetailsComponent } from "./components/details/details.component";
 
 import { routes } from "./app-routing.module";
 import { DataService } from "./services/data.service";
-import { RewardserviceService } from "./services/sonarewardservice.service";
+import { RewardserviceService } from "./services/rewardservice.service";
 import { HomeComponent } from "./pages/home/home.component";
 import { StudentsComponent } from "./pages/students/students.component";
 import { KeysPipe } from "./pipe/keys.pipe";

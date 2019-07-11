@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "src/app/services/data.service";
 import { Router, ActivatedRoute } from "@angular/router";
-import { RewardserviceService } from 'src/app/services/sonarewardservice.service';
+// import { RewardserviceService } from 'src/app/services/sonarewardservice.service';
 
 @Component({
   selector: "app-students",
@@ -17,12 +17,13 @@ export class StudentsComponent implements OnInit {
   public studentId: null;
   public studentList: any;
   public reward: any;
+  sonarewardService: any;
 
   constructor(
     private dataService: DataService,
     private router: Router,
     private route: ActivatedRoute,
-    public rewardService :RewardserviceService
+    // public rewardService :RewardserviceService
   ) {
     const params = this.route.snapshot.params; // btane ke liyue data aa rha h ki nhi
     if (params) {
@@ -76,7 +77,7 @@ export class StudentsComponent implements OnInit {
     });
   }
   getRewardDetail() {
-    this.rewardService.getRewardDetails().subscribe (data => {
+    this.sonarewardService.getRewardDetails().subscribe (data => {
     this.rewards = data;
     console.log(data);
    if( this.candidateId === this.studentId)
