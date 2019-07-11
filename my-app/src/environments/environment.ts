@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   dataURL: "http://localhost:8080",
-  rewardURL: "http://localhost:9090"
+  piyushrewardURL: "http://localhost:1111"
 };
 
 /*
