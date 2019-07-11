@@ -10,7 +10,7 @@ export class RewardserviceService {
 
   constructor(private http: HttpClient) {}
    
-  rewardUrl = environment.rewardURL;  
+  rewardUrl = environment.sonarewardURL;  
 
 getRewardDetails(){
   // return candidateData;

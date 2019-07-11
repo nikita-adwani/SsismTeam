@@ -7,16 +7,16 @@ import {environment} from '../../environments/environment';
   providedIn: 'root'
 })
 export class SonarewardService {
-
+ 
 
   constructor(private http: HttpClient) {}
    
-  sonaRewardUrl = environment. sonaRewardURL;  
+  sonarewardUrl = environment.sonarewardURL;  
 
 getRewardDetails(){
   // return candidateData;
 
-  return this.http.get(this. sonaRewardUrl );
+  return this.http.get(this.sonarewardUrl );
  
 }
 }

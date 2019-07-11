@@ -1,16 +1,15 @@
 var http = require('http');
 const fs = require('fs');
 
-let sonarewardData = [];
+let nikitaRewardData = [];
 fs.readFile('./sonarewardData.json', (err, data) => {
         if (err) {
             console.error(err)
             return
         }
         let rawdata = data
-        sonarewardData = JSON.parse(rawdata);
-        //console.log(candidateData)
-        ;
+        nikitaRewardData = JSON.parse(rawdata);
+        // console.log(nikitaRewardData);
     })
     //create a server object:
 http.createServer(function(req, res) {
@@ -22,7 +21,7 @@ http.createServer(function(req, res) {
 
 
     //res.write ("response")
-    res.write(JSON.stringify(sonarewardData)); //write a response to the client
+    res.write(JSON.stringify(nikitaRewardData)); //write a response to the client
 
 
     res.end(); //end the response

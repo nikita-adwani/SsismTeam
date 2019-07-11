@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { DataService } from "src/app/services/data.service";
 import { Router, ActivatedRoute } from "@angular/router";
+import { SonarewardService } from 'src/app/services/sonareward.service';
 
 @Component({
   selector: "app-students",
@@ -16,13 +17,11 @@ export class StudentsComponent implements OnInit {
   public studentId: null;
   public studentList: any;
   public reward: any;
-   public sonarewardService: any;
-
   constructor(
     private dataService: DataService,
     private router: Router,
     private route: ActivatedRoute,
-    //  public sonarewardService :RewardserviceService
+    public sonarewardService : SonarewardService
   ) {
     const params = this.route.snapshot.params; // btane ke liyue data aa rha h ki nhi
     if (params) {

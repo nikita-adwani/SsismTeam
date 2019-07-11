@@ -2,10 +2,10 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export default {
+export const environment =  {
   production: false,
   dataURL: "http://localhost:8080",
-  rewardURL: "http://localhost:1010",
+  sonarewardURL: "http://localhost:1011",
   nikitaRewardURL: "http://localhost:7700",
   suhaseeRewardURL: "http://localhost:2121",
   myrewardURL: "http://localhost:3000",
