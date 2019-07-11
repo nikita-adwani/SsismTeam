@@ -6,17 +6,17 @@ import {environment} from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class RewardserviceService {
+export class SonarewardService {
+ 
 
   constructor(private http: HttpClient) {}
    
-  rewardUrl = environment.rewardURL;  
+  sonarewardUrl = environment.sonarewardURL;  
 
 getRewardDetails(){
   // return candidateData;
 
-  return this.http.get(this.rewardUrl );
+  return this.http.get(this.sonarewardUrl );
  
 }
 }
- 

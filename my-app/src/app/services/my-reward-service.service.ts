@@ -8,8 +8,8 @@ import { environment } from '../../environments/environment';
 export class MyRewardServiceService {
 
   constructor(private http: HttpClient) { }
-  myrewardURL = environment.rewardURL;
+  myrewardUrl = environment.myrewardURL;
   getRewardDetails(){
-    return this.http.get(this. myrewardURL);
+    return this.http.get(this. myrewardUrl);
   }
 }

@@ -2,7 +2,7 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+export const environment =  {
   production: false,
   
   // yours server
@@ -13,14 +13,23 @@ export const environment = {
   {"id":2, "name":"nikita" , "url" :"http://localhost:7700"},
   {"id":3, "name":"piyush" , "url" :"http://localhost:1111"},
   {"id":4, "name":"prashant" , "url" :"http://localhost:3000"},
-  {"id":5, "name":"sonakshi" , "url" :"http://localhost:2121"},
+  {"id":5, "name":"sonakshi" , "url" :"http://localhost:1011"},
   {"id":6, "name":"suhasee" , "url" :"http://localhost:2121"}
 ]
 
 
-}
+};
 
 
+  
+
+  
+
+  // rewardURL: "http://localhost:1010",
+
+  
+  // rewardURL: "http://localhost:9090",
+  
 /*
  * For easier debugging in development mode, you can import the following file
 

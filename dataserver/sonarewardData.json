@@ -1,0 +1,15 @@
+[ {
+    "id": 5,
+    "name": "Sonakshi Yadav",
+    "details": {
+        "branch": "BSC(CS)",
+        "city": "Dewas",
+        "collegeName": "SSISM,Sandalpur",
+        "emailId": "ysonakshi57@gmail.com",
+        "gender": "female",
+        "hobbies": "Playing Volleyball",
+        "imgPath": "assets/images/sonakshi1.jpg",
+        "mobileNo": "7692089170",
+        "year": "Second year"
+    }
+}]

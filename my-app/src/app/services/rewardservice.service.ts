@@ -11,9 +11,13 @@ export class RewardserviceService {
 
   constructor(private http: HttpClient) {}
    
+
   rewardUrl = environment.rewardURL;
   multiUrl = environment.multiURL;
   rewardData = new BehaviorSubject([]);
+
+  
+
 
 getRewardDetails(){
   return this.http.get(this.rewardUrl);
