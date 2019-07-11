@@ -2,19 +2,18 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
-export const environment = {
+export default {
   production: false,
   dataURL: "http://localhost:8080",
   rewardURL: "http://localhost:1010",
-  rewardURL: "http://localhost:9090",
-  suhaseeRewardURL: "http://localhost:2121"
+  nikitaRewardURL: "http://localhost:7700",
+  suhaseeRewardURL: "http://localhost:2121",
+  myrewardURL: "http://localhost:3000"
 };
+/*
+ * For easier debugging in development mode, you can import the following file
 
-// /*
-//  * For easier debugging in development mode, you can import the following file
-//  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
-//  *
-//  * This import should be commented out in production mode because it will have a negative impact
-//  * on performance if an error is thrown.
-//  */
-// // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
