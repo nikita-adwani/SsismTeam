@@ -20,6 +20,23 @@
                     "scores": 10,
                     "rewards": 0,
                     "Status": "complete"
+                }, {
+                    "Name": "Protype table",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Voice Task",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Additional Task",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
                 }
             ]
         },

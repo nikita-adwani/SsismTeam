@@ -19,16 +19,6 @@ export const environment =  {
 
 
 };
-
-
-  
-
-  
-
-  // rewardURL: "http://localhost:1010",
-
-  
-  // rewardURL: "http://localhost:9090",
   
 /*
  * For easier debugging in development mode, you can import the following file

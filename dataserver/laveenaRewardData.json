@@ -1,6 +1,5 @@
 [{
-
-    "studentName": "Laveena pahuja",
+    "studentName": "Laveena Pahuja",
     "studentID": 1,
     "courses": [{
             "courseName": "HTML",
@@ -30,7 +29,7 @@
             "courseName": "Javascript",
             "tasks": [{
                     "Name": "Javascript quiz",
-                    "scores": 24,
+                    "scores": 25,
                     "rewards": 100,
                     "Status": "complete"
                 },
@@ -49,17 +48,35 @@
                 {
                     "Name": "filter,reduce,map ,json",
                     "scores": 10,
-                    "reward": 100,
+                    "rewards": 100,
                     "Status": "completed"
                 },
                 {
                     "Name": "filter,map,reduce,and given json",
                     "scores": 10,
-                    "reward": 100,
+                    "rewards": 100,
                     "Status": "completed"
                 },
                 {
                     "Name": "Webpage using dom",
+                    "scores": 10,
+                    "rewards": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Protype table",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Voice Task",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Additional Task",
                     "scores": 10,
                     "reward": 100,
                     "Status": "completed"

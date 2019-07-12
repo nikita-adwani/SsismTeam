@@ -1,15 +1,85 @@
-[ {
-    "id": 5,
-    "name": "Sonakshi Yadav",
-    "details": {
-        "branch": "BSC(CS)",
-        "city": "Dewas",
-        "collegeName": "SSISM,Sandalpur",
-        "emailId": "ysonakshi57@gmail.com",
-        "gender": "female",
-        "hobbies": "Playing Volleyball",
-        "imgPath": "assets/images/sonakshi1.jpg",
-        "mobileNo": "7692089170",
-        "year": "Second year"
-    }
+[{
+    "studentName": "Sonakshi Yadav",
+    "studentID": 5,
+    "courses": [{
+            "courseName": "HTML",
+            "tasks": [{
+                    "Name": "HTML quiz",
+                    "scores": 36,
+                    "rewards": 100,
+                    "Status": "complete"
+                },
+                {
+                    "Name": "Designing a login form",
+                    "scores": 10,
+                    "rewards": 0,
+                    "Status": "complete"
+                },
+                {
+                    "Name": "Designing a registration form",
+                    "scores": 10,
+                    "rewards": 0,
+                    "Status": "complete"
+                }
+            ]
+        },
+        {
+            "courseName": "Javascript",
+            "tasks": [{
+                    "Name": "Javascript quiz",
+                    "scores": 25,
+                    "rewards": 100,
+                    "Status": "complete"
+                },
+                {
+                    "Name": "Validating a form",
+                    "scores": 10,
+                    "rewards": 0,
+                    "Status": "complete"
+                },
+                {
+                    "Name": "Validating a form",
+                    "scores": 10,
+                    "rewards": 0,
+                    "Status": "complete"
+                },
+                {
+                    "Name": "filter,reduce,map ,json",
+                    "scores": 10,
+                    "rewards": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "filter,map,reduce,and given json",
+                    "scores": 10,
+                    "rewards": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Webpage using dom",
+                    "scores": 10,
+                    "rewards": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Protype table",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Voice Task",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                },
+                {
+                    "Name": "Additional Task",
+                    "scores": 10,
+                    "reward": 100,
+                    "Status": "completed"
+                }
+            ]
+        }
+    ]
 }]
