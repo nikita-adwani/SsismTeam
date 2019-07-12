@@ -4,7 +4,9 @@
     "studentID": 1,
     "courses": [{
             "courseName": "HTML",
-            "tasks": [{
+            "tasks": [
+
+                {
                     "Name": "HTML quiz",
                     "scores": 40,
                     "rewards": 100,

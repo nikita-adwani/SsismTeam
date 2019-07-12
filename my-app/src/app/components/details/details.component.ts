@@ -101,10 +101,10 @@ export class DetailsComponent implements OnInit {
 
 
     return 'Hello,  My name is ' + data.name + '. I am from ' +
-    data.details.city +'.I am pursuring' +data.details.branch+'from' + data.details.collegeName + 
+    data.details.city +'. I  am  pursuring ' +  data.details.branch +  ' from ' + data.details.collegeName + 
     ', and currently I am in ' +
-     data.details.year + ', '
-    +  '. and my hobby is ' + data.details.hobbies;
+      data.details.year + ', '
+    +  '. and my hobby is ' + data.details.hobbies + ' and my rewards are ' + data.totalReward ;
   }
   
    saySomething() {
@@ -117,22 +117,24 @@ export class DetailsComponent implements OnInit {
       console.log(window.speechSynthesis.getVoices());
       voices = window.speechSynthesis.getVoices();
       if (this.item.details.gender === "male" || this.item.details.gender === "Male" ){
-      msg.voice = voices[0]; // try changing the number and hear different voices.
-      msg.voiceURI= "Google UK English Male"
-      msg.volume = 1; // 0 to 1
-     msg.voiceURI= "Google UK English Male"
-      msg.volume = 0.1; // 0 to 1
+      // msg.voice = voices[0]; // try changing the number and hear different voices.
+      msg. default= false
+      msg. lang= "en-Uk"
+      msg. localService= false
+      msg. name= "Google UK English Male"
+      msg. voiceURI= "Google UK English Male"
       msg.rate = 1; // 0.1 to 10
       msg.pitch = 0; //0 to 2
       console.log(msg);
       window.speechSynthesis.speak(msg)}
       else      
       {
-        msg.voice = voices[3]; // try changing the number and hear different voices.
-       msg.voiceURI = "Google US English";
-        msg.volume = 1; // 0 to 1
-        msg.rate = 1; // 0.1 to 10
-        msg.pitch = 0; //0 to 2
+        // msg.voice = voices[3]; // try changing the number and hear different voices.
+       msg.default= false
+       msg.lang= "en-UK"
+       msg. localService= false
+        msg.name= "Google UK English Female"
+       msg. voiceURI= "Google UK English Female"
         console.log(msg);
         window.speechSynthesis.speak(msg)
       }
